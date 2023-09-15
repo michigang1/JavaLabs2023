@@ -1,6 +1,8 @@
 package src;
 
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -16,7 +18,7 @@ public class App {
         System.out.println("More than average: "+ Arrays.toString(resultMore));
     }
 
-    public static String[] getMoreThanAverage(String[] strings) {
+    public static String @NotNull [] getMoreThanAverage(String @NotNull [] strings) {
         ArrayList<String> targetStrings = new ArrayList<>();
 
         int averageLength = getAverageLength(strings);
@@ -29,7 +31,7 @@ public class App {
         return targetStrings.toArray(String[]::new);
     }
 
-    public static String[] getLessThanAverage(String[] strings) {
+    public static String @NotNull [] getLessThanAverage(String @NotNull [] strings) {
         ArrayList<String> targetStrings = new ArrayList<>();
 
         int averageLength = getAverageLength(strings);
@@ -42,7 +44,7 @@ public class App {
         return targetStrings.toArray(String[]::new);
     }
 
-    private static int getAverageLength(String[] strings) {
+    private static int getAverageLength(String @NotNull [] strings) {
         int averageLength = 0;
         for (String string : strings) {
             averageLength += string.length();
