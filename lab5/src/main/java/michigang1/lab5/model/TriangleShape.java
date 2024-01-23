@@ -1,20 +1,18 @@
 package michigang1.lab5.model;
 
-import michigang1.lab5.model.Shape;
-
-public class RectangleShape extends Shape {
-    private double width;
+public class TriangleShape extends Shape {
+    private double base;
     private double height;
 
-    public RectangleShape(String shapeColor, double width, double height) {
+    public TriangleShape(String shapeColor, double base, double height) {
         super(shapeColor);
-        this.width = width;
+        this.base = base;
         this.height = height;
     }
 
     @Override
     public double calcArea() {
-        return width * height;
+        return 0.5 * base * height;
     }
 
     @Override
@@ -24,19 +22,18 @@ public class RectangleShape extends Shape {
 
     @Override
     public String toString() {
-        return "RectangleShape{" +
-                "width=" + width +
+        return "TriangleShape{" +
+                "base=" + base +
                 ", height=" + height +
                 ", color='" + getColor() + '\'' +
                 '}';
     }
 
-    public double getWidth() {
-        return width;
+    public double getBase() {
+        return base;
     }
 
     public double getHeight() {
         return height;
     }
-
 }

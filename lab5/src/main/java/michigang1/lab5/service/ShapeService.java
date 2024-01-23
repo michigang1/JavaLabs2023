@@ -1,9 +1,9 @@
 package michigang1.lab5.service;
 
+import michigang1.lab5.model.Shape;
 import michigang1.lab5.repository.ShapeRepository;
 import michigang1.lab5.comparator.AreaComparator;
 import michigang1.lab5.comparator.ColorComparator;
-import michigang1.lab5.model.Shape;
 
 import java.util.ArrayList;
 

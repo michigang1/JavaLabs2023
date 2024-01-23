@@ -1,12 +1,12 @@
 package michigang1.lab5;
 
+import michigang1.lab5.controller.ShapeController;
+import michigang1.lab5.model.Shape;
 import michigang1.lab5.analyzer.TagFrequencyAnalyzer;
 import michigang1.lab5.cipher.CipherStream;
-import michigang1.lab5.controller.ShapeController;
 import michigang1.lab5.finder.MaxWordsLineFinder;
 import michigang1.lab5.model.CircleShape;
 import michigang1.lab5.model.RectangleShape;
-import michigang1.lab5.model.Shape;
 import michigang1.lab5.model.TriangleShape;
 import michigang1.lab5.repository.ShapeRepository;
 import michigang1.lab5.service.ShapeService;

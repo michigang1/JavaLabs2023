@@ -1,7 +1,5 @@
 package michigang1.lab5.model;
 
-import michigang1.lab5.model.Shape;
-
 public class CircleShape extends Shape {
     private double radius;
 

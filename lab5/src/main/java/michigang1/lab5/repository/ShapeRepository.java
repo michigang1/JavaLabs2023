@@ -1,10 +1,9 @@
 package michigang1.lab5.repository;
 
+import michigang1.lab5.model.Shape;
 import michigang1.lab5.io.InputReader;
 import michigang1.lab5.io.OutputWriter;
-import michigang1.lab5.model.Shape;
 
-import java.io.*;
 import java.util.ArrayList;
 
 public class ShapeRepository implements Repository, Readable<Shape>, Writable<Shape> {
