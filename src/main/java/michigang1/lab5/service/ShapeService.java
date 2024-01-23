@@ -1,13 +1,11 @@
-package michigang1.lab3.service;
+package michigang1.lab5.service;
 
-import michigang1.lab3.comparator.AreaComparator;
-import michigang1.lab3.comparator.ColorComparator;
-import michigang1.lab3.models.Shape;
-import michigang1.lab3.repository.ShapeRepository;
+import michigang1.lab5.repository.ShapeRepository;
+import michigang1.lab5.comparator.AreaComparator;
+import michigang1.lab5.comparator.ColorComparator;
+import michigang1.lab5.model.Shape;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 
 public class ShapeService implements Service {
     private final ShapeRepository shapeRepository;
